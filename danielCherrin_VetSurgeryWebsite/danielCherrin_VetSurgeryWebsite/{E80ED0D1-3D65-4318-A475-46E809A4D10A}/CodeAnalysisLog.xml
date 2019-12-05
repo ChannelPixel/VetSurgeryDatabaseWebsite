@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\professional\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\Cherrd\AppData\Local\Temp\tmp9542.tmp.cadir\bin\App_Web_esidgaqr.dll">
+   <Modules>
+    <Module Name="app_web_esidgaqr.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btn_login_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="Default.aspx.cs" Line="64">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in '_Default.btn_login_Click(object, EventArgs)' could contain the following variables 'this.txt_email.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="Default.aspx.cs" Line="34">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in '_Default.btn_login_Click(object, EventArgs)' could contain the following variables 'this.txt_email.Text', 'this.txt_password.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AllBookings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#gv_allBookings_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="AllBookings.aspx.cs" Line="135">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AllBookings.gv_allBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="AllBookings.aspx.cs" Line="91">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AllBookings.gv_allBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectPetId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="AllBookings.aspx.cs" Line="115">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'AllBookings.gv_allBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectPetId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CreateBookings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btn_createBooking_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="CreateBooking.aspx.cs" Line="105">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'CreateBookings.btn_createBooking_Click(object, EventArgs)' could contain the following variables 'this.ddl_createVets.SelectedValue', 'this.ddl_createPets.SelectedValue', 'this.txt_createDate.Text', 'this.txt_createTime.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="EditBooking" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btn_addMed_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="297">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'EditBooking.btn_addMed_Click(object, EventArgs)' could contain the following variables 'this.Session["editBookingId"]', 'this.ddl_addMeds.SelectedValue'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="315">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'EditBooking.btn_addMed_Click(object, EventArgs)' could contain the following variables 'this.Session["editBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btn_deleteBooking_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="277">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'EditBooking.btn_deleteBooking_Click(object, EventArgs)' could contain the following variables 'this.Session["editBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btn_updateBooking_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="261">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'EditBooking.btn_updateBooking_Click(object, EventArgs)' could contain the following variables 'this.ddl_editVets.SelectedValue', 'this.ddl_editPets.SelectedValue', 'this.txt_editBookingDate.Text', 'this.txt_editBookingTime.Text', 'base.ToString()', 'this.ddl_editPaymentType.SelectedValue', 'this.txt_editCost.Text', 'this.txt_editCreditCardNo.Text', 'this.txt_editCreditCardName.Text', 'this.txt_editComments.Text', 'new object[23][21]', 'this.ddl_editVets.SelectedValue', 'this.ddl_editPets.SelectedValue', 'this.txt_editBookingDate.Text', 'this.txt_editBookingTime.Text', 'base.ToString()', 'this.ddl_editPaymentType.SelectedValue', 'this.txt_editComments.Text', 'new object[19][17]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#gv_editBookingMeds_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="341">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'EditBooking.gv_editBookingMeds_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.gv_editBookingMeds.DataKeys[gvr.RowIndex].Values[0]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="359">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'EditBooking.gv_editBookingMeds_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["editBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="56">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'EditBooking.Page_Load(object, EventArgs)' could contain the following variables 'this.Session["editBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="EditBooking.aspx.cs" Line="186">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'EditBooking.Page_Load(object, EventArgs)' could contain the following variables 'this.Session["editBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FinancialReports" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btn_sumbitDates_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="FinancialReports.aspx.cs" Line="145">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'FinancialReports.btn_sumbitDates_Click(object, EventArgs)' could contain the following variables 'this.txt_dateToDateEnd.Text', 'this.txt_dateToDateStart.Text'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="FinancialReports.aspx.cs" Line="71">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'FinancialReports.Page_Load(object, EventArgs)' could contain the following variables 'new string[5][1]', 'new string[5][3]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="FinancialReports.aspx.cs" Line="102">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'FinancialReports.Page_Load(object, EventArgs)' could contain the following variables 'new string[5][1]', 'new string[5][3]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MyBookings" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#gv_myBookings_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="MyBookings.aspx.cs" Line="148">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'MyBookings.gv_myBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="MyBookings.aspx.cs" Line="104">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'MyBookings.gv_myBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectPetId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="MyBookings.aspx.cs" Line="128">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'MyBookings.gv_myBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectPetId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="MyBookings.aspx.cs" Line="44">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'MyBookings.Page_Load(object, EventArgs)' could contain the following variables 'this.Session["user_email"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Vet_Homepage" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#gv_allBookings_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="HomeAllBookings.aspx.cs" Line="198">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Vet_Homepage.gv_allBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectBookingId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="HomeAllBookings.aspx.cs" Line="154">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Vet_Homepage.gv_allBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectPetId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="HomeAllBookings.aspx.cs" Line="178">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Vet_Homepage.gv_allBookings_RowCommand(object, GridViewCommandEventArgs)' could contain the following variables 'this.Session["selectPetId"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-06-14 05:24:50Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\NMTafe\Cert IV\Semester 2\Adv ASP\danielCherrin_Assignment02\danielCherrin_VetSurgeryWebsite\danielCherrin_VetSurgeryWebsite" File="HomeAllBookings.aspx.cs" Line="56">The query string passed to 'SqlDataAdapter.SqlDataAdapter(string, SqlConnection)' in 'Vet_Homepage.Page_Load(object, EventArgs)' could contain the following variables 'this.Session["user_email"]'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

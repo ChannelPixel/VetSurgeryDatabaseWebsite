@@ -1,0 +1,10 @@
+﻿//NOTES:
+
+/GridView
+	- Making a boundfield.visible = false, keeps it's index position.
+		However you have to set the control in the cell NOT the cell itself;
+		otherwise this will visibly shift the index in the row's cells and 
+		bind under the wrong header. IMPORTANT->accessing the text in an visible=false
+		cell will return "";
+	FOR OTHER FIELDS - To access the control user e.Row.Cells[*column index of the control*].Controls[0]
+	FOR TEMPLATE FIELDS  - To access the control use e.Row.Cells[*column index of the control*].FindControl("*Control ID*")
